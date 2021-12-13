@@ -10,6 +10,7 @@
     <canvas id="unity-canvas" style="width: 1000px; height: 1000px; background: #231F20"></canvas>
     <script src="Build/MarblesNov23.loader.js"></script>
     <script>
+      script.onload = () => {
       createUnityInstance(document.querySelector("#unity-canvas"), {
         dataUrl: "Build/MarblesNov23.data",
         frameworkUrl: "Build/MarblesNov23.framework.js",
@@ -23,7 +24,7 @@
       {
         unityInstance = instance;
       })
-      .catch((message) => { console.warn(message); });
+      .catch((message) => { console.warn(message); });}
     </script>
   </body>
 </html>
