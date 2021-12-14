@@ -8,13 +8,12 @@
   </head>
   <body style="text-align: center">
     <canvas id="unity-canvas" style="width: 1000px; height: 1000px; background: #231F20"></canvas>
-    <script src="Build/MarblesNov23.loader.js"></script>
+    <script src="Build/Dec13.loader.js"></script>
     <script>
-      script.onload = () => {
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/MarblesNov23.data",
-        frameworkUrl: "Build/MarblesNov23.framework.js",
-        codeUrl: "Build/MarblesNov23.wasm",
+        dataUrl: "Build/Dec13.data",
+        frameworkUrl: "Build/Dec13.framework.js",
+        codeUrl: "Build/Dec13.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Test",
@@ -24,7 +23,7 @@
       {
         unityInstance = instance;
       })
-      .catch((message) => { console.warn(message); });}
+      .catch((message) => { console.warn(message); });
     </script>
   </body>
 </html>
