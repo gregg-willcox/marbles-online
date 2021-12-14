@@ -7,7 +7,7 @@
     <script src="./polyfills.js"></script>
   </head>
   <body style="text-align: center">
-    <canvas id="unity-canvas" style="width: 1000px; height: 1000px; background: #231F20"></canvas>
+    <canvas id="unity-canvas" style="width: calc(min(100vh, 100vw)); height: calc(min(100vh, 100vw)); background: #231F20"></canvas>
     <script src="Build/Dec14.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
